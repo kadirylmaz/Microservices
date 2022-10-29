@@ -24,9 +24,9 @@ services:
 			networks:
 				- int_net
 
-	s_contact_api:
-		container_name: c_reservation_api
-		image: kadir/reservationapi
+	s_res_api:
+		container_name: c_res_api
+		image: kadir/resapi
 		build:
 			context: .
 			dockerfile: Services/ReservationAPI/Reservation.API/Dockerfile
